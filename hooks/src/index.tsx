@@ -6,13 +6,19 @@ import reportWebVitals from "./reportWebVitals";
 import UseStateApp1 from "./UseStateApp1";
 import UseStateApp2 from "./UseStateApp2";
 import UseEffectApp from "./UseEffectApp";
+import Timer from "./components/Timer";
+import UseEffectApp2 from "./UserEffectApp2";
+import UseCalulatorApp from "./UseCalulatorApp";
+import UseCalulatorApp2 from "./UseCalulatorApp2";
+import UseContextApp from "./UseContextApp";
+import ContentDarkMode from "./ContentDarkMode";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <UseEffectApp />
+    <UseContextApp />
   </React.StrictMode>
 );
 
