@@ -6,7 +6,7 @@ function UseContextApp() {
   const [isDark, setIsDark] = useState(false);
   console.log("UseContextApp : ");
   console.log("isDark : ", isDark, ", setIsDark : ", setIsDark);
-  return <Page isDark={isDark} setIsDark={setIsDark} />;
+  return <Page />;
   // return <Page />;
 }
 

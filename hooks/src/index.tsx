@@ -12,13 +12,14 @@ import UseCalulatorApp from "./UseCalulatorApp";
 import UseCalulatorApp2 from "./UseCalulatorApp2";
 import UseContextApp from "./UseContextApp";
 import ContentDarkMode from "./ContentDarkMode";
+import UseContextApp1 from "./UseContextApp1";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <UseContextApp />
+    <UseContextApp1 />
   </React.StrictMode>
 );
 

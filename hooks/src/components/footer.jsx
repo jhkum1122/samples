@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../context/Themecontext";
 
-const Footer = ({ isDark, setIsDark }) => {
+const Footer = () => {
+  const { isDark, setIsDark } = useContext(ThemeContext);
+
   console.log("Footer : ");
   console.log("isDark : ", isDark, ", setIsDark : ", setIsDark);
   function handleClick() {
