@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 
 const Header = ({ isDark }) => {
+  console.log("Header : ");
+  console.log("isDark : ", isDark);
   return (
     <header
       className="header"

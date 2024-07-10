@@ -1,6 +1,8 @@
 import React from "react";
 
 const Footer = ({ isDark, setIsDark }) => {
+  console.log("Footer : ");
+  console.log("isDark : ", isDark, ", setIsDark : ", setIsDark);
   function handleClick() {
     setIsDark(!isDark); // 이전 상태의 반전값으로 설정
   }

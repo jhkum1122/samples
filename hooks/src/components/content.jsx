@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 
 const Content = ({ isDark }) => {
+  console.log("Content : ");
+  console.log("isDark : ", isDark);
   return (
     <div
       className="content"
