@@ -3,6 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import UseStateApp1 from "./UseStateApp1";
+import UseStateApp2 from "./UseStateApp2";
+import UseEffectApp from "./UseEffectApp";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
