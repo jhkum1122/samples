@@ -5,7 +5,7 @@ import Page from "./components/page";
 function UseContextApp() {
   const [isDark, setIsDark] = useState(false);
 
-  return <Page />;
+  return <Page isDark={isDark} setIsDark={setIsDark} />;
   // return <Page />;
 }
 
