@@ -10,8 +10,8 @@ export default class ClassComponent extends Component<ClassComponentProps> {
     const { href, text } = this.props;
     return (
       <li>
-        <a href="https://wwww.google.com">
-          <p> go to google</p>
+        <a href="http://www.google.com">
+          <p>go to google</p>
         </a>
       </li>
     );

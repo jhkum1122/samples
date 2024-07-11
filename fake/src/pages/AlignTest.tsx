@@ -1,21 +1,16 @@
-import { Div, Title, Subtitle } from "../components";
-import * as D from "../data";
+import {Div, Title, Subtitle} from '../components'
+import * as D from '../data'
 
 export default function AlignTest() {
-  const boxes = D.range(0, 5).map((index) => {
-    return <Div key={index} className="w-4 h-4 m-1 bg-black" />;
-  });
-  const boxesForStretch = D.range(0, 10).map((index) => {
-    return (
-      <div
-        key={index}
-        className="w-4 m-4 bg-black flex flex-row justify-stretch"
-      />
-    );
-  });
+  const boxes = D.range(0, 5).map(index => {
+    return <Div key={index} className="w-4 h-4 m-1 bg-black" />
+  })
+  const boxesForStretch = D.range(0, 10).map(index => {
+    return <div key={index} className="w-4 m-4 bg-black" />
+  })
 
   // prettier-ignore
-  const justifies = ['justify-start', 'justify-center', 'justify-end',
+  const justifies = ['justify-', 'justify-', 'justify-',
     'justify-', 'justify-', 'justify-'].map(justify => (
       <div key={justify} className="mt-4">
         <Subtitle>flex flex-row {justify}</Subtitle>
@@ -23,21 +18,19 @@ export default function AlignTest() {
       </div>
     ))
 
-  const items = ["items-", "items-", "items-"].map((item) => (
+  const items = ['items-', 'items-', 'items-'].map(item => (
     <div key={item} className="p-2 ml-4">
       <Subtitle>flex flex-row {item}</Subtitle>
       <div className={`flex flex-row ${item} h-20 bg-gray-300`}>{boxes}</div>
     </div>
-  ));
+  ))
 
-  const flexColItems = ["items-start", "items-center", "items-end"].map(
-    (item) => (
-      <div key={item} className="p-2 ml-4">
-        <Subtitle>flex flex-col {item}</Subtitle>
-        <div className={`flex flex-col ${item} h-40 bg-gray-300`}>{boxes}</div>
-      </div>
-    )
-  );
+  const flexColItems = ['items-', 'items-', 'items-'].map(item => (
+    <div key={item} className="p-2 ml-4">
+      <Subtitle>flex flex-col {item}</Subtitle>
+      <div className={`flex flex-col ${item} h-40 bg-gray-300`}>{boxes}</div>
+    </div>
+  ))
 
   return (
     <section className="mt-4">
@@ -52,5 +45,5 @@ export default function AlignTest() {
       </div>
       {flexColItems}
     </section>
-  );
+  )
 }

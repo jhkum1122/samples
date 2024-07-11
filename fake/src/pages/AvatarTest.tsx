@@ -12,7 +12,7 @@ export default function AvatarTest() {
   return (
     <section className="mt-4">
       <Title>AvatarTest</Title>
-      <Div className="px-12 py-4 m-8 bg-blue-300">{avatars}</Div>
+      <div className="px-12 py-4 m-8 bg-blue-300">{avatars}</div>
     </section>
   );
 }

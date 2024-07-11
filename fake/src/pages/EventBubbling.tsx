@@ -4,7 +4,7 @@ export default function EventBubbling() {
   const onDivClick = (e: SyntheticEvent) => {
     const { isTrusted, target, bubbles, currentTarget } = e;
     console.log(
-      "click event bubble on <div> occurs ",
+      "click event bubbles on <div>",
       isTrusted,
       target,
       bubbles,
@@ -15,17 +15,17 @@ export default function EventBubbling() {
   const onButtonClick = (e: SyntheticEvent) => {
     const { isTrusted, target, bubbles, currentTarget } = e;
     console.log(
-      "click event starts on <div> occurs ",
+      "click event starts on <div>",
       isTrusted,
       target,
       bubbles,
       currentTarget
     );
   };
-
   return (
     <div onClick={onDivClick}>
-      <p>EventBubbling</p> <button onClick={onButtonClick}>Click me</button>
+      <p>EventBubbling</p>
+      <button onClick={onButtonClick}>Click Me</button>
     </div>
   );
 }

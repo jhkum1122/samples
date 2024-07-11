@@ -18,8 +18,8 @@ export default function DragDrop() {
       <div draggable onDragStart={onDragStart} onDragEnd={onDragEnd}>
         <h1>Drag Me</h1>
       </div>
-      <div onDragOver={onDragOver} onDrop={onDrop}>
-        <h2>Drop Over Me</h2>
+      <div onDrop={onDrop} onDragOver={onDragOver}>
+        <h1>Drop over Me</h1>
       </div>
     </div>
   );

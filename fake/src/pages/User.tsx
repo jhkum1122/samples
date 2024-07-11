@@ -1,14 +1,14 @@
-import type { FC } from "react";
-import type { DivProps } from "../components";
-import * as D from "../data";
-import { Div, Avatar } from "../components";
+import type {FC} from 'react'
+import type {DivProps} from '../components'
+import * as D from '../data'
+import {Div, Avatar} from '../components'
 
 export type UserProps = DivProps & {
-  user: D.IUser;
-};
+  user: D.IUser
+}
 
-const User: FC<UserProps> = ({ user, ...props }) => {
-  const { name, email, jobTitle, avatar } = user;
+const User: FC<UserProps> = ({user, ...props}) => {
+  const {name, email, jobTitle, avatar} = user
   return (
     <Div {...props}>
       <div className="flex p-2">
@@ -20,6 +20,6 @@ const User: FC<UserProps> = ({ user, ...props }) => {
         </div>
       </div>
     </Div>
-  );
-};
-export default User;
+  )
+}
+export default User

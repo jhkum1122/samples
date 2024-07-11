@@ -1,30 +1,27 @@
-import type { FC } from "react";
-import type { DivProps } from "../components";
-import { Div, Icon } from "../components";
-import * as D from "../data";
-import User from "./User";
+import type {FC} from 'react'
+import type {DivProps} from '../components'
+import {Div, Icon} from '../components'
+import * as D from '../data'
+import User from './User'
 
 export type CardProps = DivProps & {
-  card: D.ICard;
-};
+  card: D.ICard
+}
 
-const Card: FC<CardProps> = ({ card, ...props }) => {
-  const { writer, image, title, paragraphs, dayMonthYearDate, relativeDate } =
-    card;
-  const icons = ["home", "search", "settings", "favorite"].map((name) => (
-    <Icon key={name} name={name} className="w-8 h-8 mr-2 text-red-500" />
-  ));
+const Card: FC<CardProps> = ({card, ...props}) => {
+  const {writer, image, title, paragraphs, dayMonthYearDate, relativeDate} = card
+  const icons = ['home', 'search', 'settings', 'favorite'].map(name => (
+    <Icon key={name} name={name} className="mr-2 text-3xl" />
+  ))
   return (
     <Div {...props}>
-      <div className="flex flex-col m-10">
-        <Div src={image} className="h-60 w-300 overflow-hidden" />
-        <Div className="p-4 w-300" height="16rem">
-          <p className="mt-2 text-3xl text-center text-bold truncate">
-            {title}
-          </p>
-          <Div className="flex justify-between " minWidth="20rem">
-            <User user={writer} className="mt-2 truncate" minWidth="10rem" />
-            <Div className="mt-2 truncate">
+      <div className="flex flex-col">
+        <Div src={image} className="h-60" />
+        <Div className="p-4" height="16rem">
+          <p className="mt-2 text-3xl text-center text-bold">{title}</p>
+          <Div className="flex justify-between">
+            <User user={writer} className="mt-2" />
+            <Div className="mt-2">
               <p className="text-gray-500">{relativeDate}</p>
               <p className="text-gray-500">{dayMonthYearDate}</p>
             </Div>
@@ -36,6 +33,6 @@ const Card: FC<CardProps> = ({ card, ...props }) => {
         </Div>
       </div>
     </Div>
-  );
-};
-export default Card;
+  )
+}
+export default Card

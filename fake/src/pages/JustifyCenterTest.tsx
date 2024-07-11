@@ -6,15 +6,17 @@ export default function JustifyCenterTest() {
     <Div key={index} className="w-4 h-4 m-1 bg-black" />
   ));
   return (
-    <section className="mt-4 ">
+    <section className="mt-4">
       <Title>JustifyCenterTest</Title>
-      <div className="mt-4 ">
-        <Subtitle>flex flex-row justify-center</Subtitle>
-        <div className="h-40 bg-gray-300 flex justify-center">{boxes}</div>
+      <div className="mt-4">
+        <Subtitle>flex flex-row justify-start</Subtitle>
+        <div className="flex flex-row justify-start h-40 bg-gray-300">
+          {boxes}
+        </div>
       </div>
-      <div className="mt-4 justify-end">
+      <div className="mt-4">
         <Subtitle>flex flex-col justify-center</Subtitle>
-        <div className="h-40 bg-gray-300 flex flex-col align-middle ">
+        <div className="flex flex-col justify-end h-40 bg-gray-300">
           {boxes}
         </div>
       </div>
